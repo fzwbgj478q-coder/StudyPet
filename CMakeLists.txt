@@ -31,6 +31,8 @@ qt_add_executable(StudyPet
     src/service/StorageService.h
     src/service/StudyService.cpp
     src/service/StudyService.h
+    src/system/AutoStartManager.cpp
+    src/system/AutoStartManager.h
     src/window/PetWindow.cpp
     src/window/PetWindow.h
     src/window/SettingsWindow.cpp
@@ -64,6 +66,8 @@ if(BUILD_TESTING)
         src/core/PetStats.h
         src/service/StorageService.cpp
         src/service/StorageService.h
+        src/system/AutoStartManager.cpp
+        src/system/AutoStartManager.h
         src/service/StudyService.cpp
         src/service/StudyService.h
         resources/resources.qrc
