@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QCoreApplication>
 
 #include "core/PetController.h"
 
