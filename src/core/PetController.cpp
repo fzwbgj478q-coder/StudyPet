@@ -6,6 +6,7 @@
 #include "service/StudyService.h"
 #include "window/PetWindow.h"
 #include "window/SettingsWindow.h"
+#include "window/StudyWindow.h"
 
 #include <QCoreApplication>
 #include <QDate>
@@ -23,6 +24,7 @@ PetController::PetController(QObject *parent)
     , m_studyService(new StudyService(this))
     , m_reminderService(new ReminderService(this))
     , m_settingsWindow(new SettingsWindow)
+    , m_studyWindow(new StudyWindow)
 {
     m_userData->stats.updateDay(QDate::currentDate());
     connect(m_petWindow, &PetWindow::exitRequested, this, [] {
@@ -44,10 +46,14 @@ PetController::PetController(QObject *parent)
         m_petWindow->showSpeechBubble(QStringLiteral("你好！聊天功能正在准备中。"));
     });
     connect(m_petWindow, &PetWindow::settingsRequested, this, [this] { m_settingsWindow->setSettings(m_userData->settings); m_settingsWindow->show(); m_settingsWindow->raise(); });
-    connect(m_petWindow, &PetWindow::studyRequested, this, [this] { m_studyService->start(); m_petWindow->showSpeechBubble(QStringLiteral("已开始番茄钟专注。")); });
+    connect(m_petWindow, &PetWindow::studyRequested, this, [this] { m_studyWindow->setData(*m_userData,QDate::currentDate());m_studyWindow->show();m_studyWindow->raise(); });
     connect(m_petWindow, &PetWindow::statsRequested, this, [this] { const auto &s=m_userData->stats; m_petWindow->showSpeechBubble(QStringLiteral("亲密度 %1｜心情 %2｜体力 %3").arg(s.intimacy).arg(s.mood).arg(s.energy), 4000); });
-    connect(m_settingsWindow, &SettingsWindow::settingsApplied, this, [this](const AppSettings &settings) { m_userData->settings=settings; m_studyService->setDurations(settings.focusMinutes,settings.breakMinutes); m_reminderService->configure(settings.waterReminder,settings.waterIntervalMinutes,settings.restReminder,settings.restIntervalMinutes); m_storage->save(*m_userData); });
+    connect(m_settingsWindow, &SettingsWindow::settingsApplied, this, [this](const AppSettings &settings) { m_userData->settings=settings; m_petWindow->setPetScale(settings.petScale);m_petWindow->setAlwaysOnTop(settings.alwaysOnTop);m_petWindow->setClickThroughEnabled(settings.clickThrough);m_animationPlayer->setSpeedMultiplier(settings.animationSpeed);m_studyService->setDurations(settings.focusMinutes,settings.breakMinutes); m_reminderService->configure(settings.waterReminder,settings.waterIntervalMinutes,settings.restReminder,settings.restIntervalMinutes); m_storage->save(*m_userData); });
     connect(m_studyService, &StudyService::focusCompleted, this, [this](int minutes) { StorageService::addFocus(*m_userData,QDate::currentDate(),minutes);m_userData->stats.rewardPomodoro();m_storage->save(*m_userData);if(m_animationPlayer->setAction(QStringLiteral("Happy")))m_animationPlayer->start();m_petWindow->showSpeechBubble(QStringLiteral("专注完成，做得好！")); });
+    connect(m_studyService,&StudyService::remainingChanged,this,[this](int seconds){m_studyWindow->setTimerText(QStringLiteral("%1:%2").arg(seconds/60,2,10,QChar('0')).arg(seconds%60,2,10,QChar('0')));});
+    connect(m_studyWindow,&StudyWindow::startRequested,m_studyService,&StudyService::start);connect(m_studyWindow,&StudyWindow::pauseRequested,m_studyService,&StudyService::pause);connect(m_studyWindow,&StudyWindow::resumeRequested,m_studyService,&StudyService::resume);connect(m_studyWindow,&StudyWindow::resetRequested,m_studyService,&StudyService::reset);
+    connect(m_studyWindow,&StudyWindow::todoAdded,this,[this](const QString&title){StorageService::upsertTodo(*m_userData,{QString(),title});m_storage->save(*m_userData);m_studyWindow->setData(*m_userData,QDate::currentDate());});
+    connect(m_studyWindow,&StudyWindow::todoToggled,this,[this](const QString&id,bool done){for(auto&t:m_userData->todos)if(t.id==id)t.completed=done;m_storage->save(*m_userData);});connect(m_studyWindow,&StudyWindow::todoRemoved,this,[this](const QString&id){StorageService::removeTodo(*m_userData,id);m_storage->save(*m_userData);m_studyWindow->setData(*m_userData,QDate::currentDate());});
     connect(m_reminderService,&ReminderService::reminderDue,this,[this](ReminderKind kind){m_petWindow->showSpeechBubble(kind==ReminderKind::Water?QStringLiteral("该喝水啦！"):QStringLiteral("起来活动一下吧！"));});
     connect(m_animationPlayer, &AnimationPlayer::frameChanged,
             m_petWindow, &PetWindow::setPetFrame);
@@ -67,6 +73,7 @@ PetController::~PetController()
 {
     m_storage->save(*m_userData);
     delete m_settingsWindow;
+    delete m_studyWindow;
     delete m_userData;
     delete m_storage;
     delete m_petWindow;

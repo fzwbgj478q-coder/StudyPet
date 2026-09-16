@@ -6,6 +6,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QTimer>
+#include <QtGlobal>
 
 AnimationPlayer::AnimationPlayer(QObject *parent)
     : QObject(parent)
@@ -120,6 +121,7 @@ bool AnimationPlayer::isRunning() const
 {
     return m_running;
 }
+void AnimationPlayer::setSpeedMultiplier(double multiplier) { m_speedMultiplier = qBound(0.25, multiplier, 4.0); if (m_running && m_animations.contains(m_currentAction)) m_timer->start(qRound(m_animations.value(m_currentAction).intervalMs / m_speedMultiplier)); }
 
 void AnimationPlayer::start()
 {
@@ -132,7 +134,7 @@ void AnimationPlayer::start()
         stop();
         return;
     }
-    m_timer->start(m_animations.value(m_currentAction).intervalMs);
+    m_timer->start(qRound(m_animations.value(m_currentAction).intervalMs / m_speedMultiplier));
 }
 
 void AnimationPlayer::pause()

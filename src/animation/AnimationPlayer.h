@@ -27,6 +27,7 @@ public:
     [[nodiscard]] QString currentAction() const;
     [[nodiscard]] QStringList actionNames() const;
     [[nodiscard]] bool isRunning() const;
+    void setSpeedMultiplier(double multiplier);
 
 public slots:
     void start();
@@ -50,5 +51,6 @@ private:
     QString m_currentAction;
     int m_currentFrame = 0;
     bool m_running = false;
+    double m_speedMultiplier = 1.0;
 };
 

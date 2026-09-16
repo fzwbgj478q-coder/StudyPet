@@ -35,6 +35,8 @@ qt_add_executable(StudyPet
     src/window/PetWindow.h
     src/window/SettingsWindow.cpp
     src/window/SettingsWindow.h
+    src/window/StudyWindow.cpp
+    src/window/StudyWindow.h
     resources/resources.qrc
 )
 
@@ -75,6 +77,8 @@ if(BUILD_TESTING)
         src/core/PetStats.h
         src/service/StudyService.cpp
         src/service/StudyService.h
+        src/service/StorageService.cpp
+        src/service/StorageService.h
     )
     target_link_libraries(StudyPetStage3Tests PRIVATE Qt6::Test Qt6::Core)
     add_test(NAME StudyPetStage3Tests COMMAND StudyPetStage3Tests)

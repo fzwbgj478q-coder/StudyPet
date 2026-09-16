@@ -8,5 +8,5 @@
 struct TodoItem { QString id; QString title; bool completed=false; QDateTime createdAt; QDate dueDate; };
 struct DailyStudyRecord { QDate date; int focusMinutes=0; int pomodoros=0; };
 struct UserData { AppSettings settings; PetStats stats; QVector<TodoItem> todos; QVector<DailyStudyRecord> history; };
-class StorageService final { public: [[nodiscard]] QString dataPath() const; [[nodiscard]] UserData load() const; [[nodiscard]] bool save(const UserData &data) const; static void addFocus(UserData &data, const QDate &date, int minutes); };
+class StorageService final { public: explicit StorageService(QString overridePath = {}); [[nodiscard]] QString dataPath() const; [[nodiscard]] UserData load() const; [[nodiscard]] bool save(const UserData &data) const; static void addFocus(UserData &data, const QDate &date, int minutes); static int focusMinutes(const UserData &data, const QDate &date); static int pomodoroCount(const UserData &data, const QDate &date); static int learningStreak(const UserData &data, const QDate &today); static void upsertTodo(UserData &data, TodoItem item); static void removeTodo(UserData &data, const QString &id); private: QString m_overridePath; };
 

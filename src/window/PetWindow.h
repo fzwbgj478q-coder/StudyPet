@@ -21,6 +21,9 @@ public:
     void setPetFrame(const QPixmap &frame);
     [[nodiscard]] HorizontalBoundary moveHorizontally(int pixels);
     void showSpeechBubble(const QString &text, int durationMs = 2500);
+    void setPetScale(double scale);
+    void setAlwaysOnTop(bool enabled);
+    void setClickThroughEnabled(bool enabled);
 
 signals:
     void exitRequested();

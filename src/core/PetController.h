@@ -10,6 +10,7 @@ class PetWindow;
 class QTimer;
 class ReminderService;
 class SettingsWindow;
+class StudyWindow;
 class StorageService;
 class StudyService;
 struct UserData;
@@ -41,5 +42,6 @@ private:
     StudyService *m_studyService = nullptr;
     ReminderService *m_reminderService = nullptr;
     SettingsWindow *m_settingsWindow = nullptr;
+    StudyWindow *m_studyWindow = nullptr;
 };
 

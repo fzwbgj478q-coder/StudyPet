@@ -89,6 +89,9 @@ void PetWindow::setPetFrame(const QPixmap &frame)
         update();
     }
 }
+void PetWindow::setPetScale(double scale){const int size=qRound(240*qBound(.5,scale,2.0));setFixedSize(size,size);keepInsideCurrentScreen();}
+void PetWindow::setAlwaysOnTop(bool enabled){setWindowFlag(Qt::WindowStaysOnTopHint,enabled);show();}
+void PetWindow::setClickThroughEnabled(bool enabled){if(m_clickThroughAction)m_clickThroughAction->setChecked(enabled);setClickThrough(enabled);}
 
 PetWindow::HorizontalBoundary PetWindow::moveHorizontally(int pixels)
 {
