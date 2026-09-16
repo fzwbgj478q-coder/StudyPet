@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>animations/idle/idle-01.png</file>
+    </qresource>
+</RCC>
+

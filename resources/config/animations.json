@@ -1,0 +1,9 @@
+{
+  "Idle": {
+    "frames": ["qrc:/animations/idle/idle-01.png"],
+    "framesPerSecond": 1,
+    "loop": true,
+    "note": "Stage 1 placeholder; the configurable sequence player arrives in Stage 2."
+  }
+}
+
