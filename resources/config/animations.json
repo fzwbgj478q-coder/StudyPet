@@ -1,9 +1,41 @@
 {
-  "Idle": {
-    "frames": ["qrc:/animations/idle/idle-01.png"],
-    "framesPerSecond": 1,
-    "loop": true,
-    "note": "Stage 1 placeholder; the configurable sequence player arrives in Stage 2."
+  "formatVersion": 1,
+  "actions": {
+    "Idle": {
+      "frames": [":/animations/idle/idle-01.png", ":/animations/idle/idle-02.png"],
+      "intervalMs": 900,
+      "loop": true
+    },
+    "WalkLeft": {
+      "frames": [":/animations/walk-left/walk-left-01.png", ":/animations/walk-left/walk-left-02.png"],
+      "intervalMs": 180,
+      "loop": true
+    },
+    "WalkRight": {
+      "frames": [":/animations/walk-right/walk-right-01.png", ":/animations/walk-right/walk-right-02.png"],
+      "intervalMs": 180,
+      "loop": true
+    },
+    "Sleep": {
+      "frames": [":/animations/sleep/sleep-01.png"],
+      "intervalMs": 1200,
+      "loop": true
+    },
+    "Dragged": {
+      "frames": [":/animations/dragged/dragged-01.png"],
+      "intervalMs": 250,
+      "loop": true
+    },
+    "Clicked": {
+      "frames": [":/animations/clicked/clicked-01.png", ":/animations/clicked/clicked-02.png"],
+      "intervalMs": 160,
+      "loop": false
+    },
+    "Talking": {
+      "frames": [":/animations/talking/talking-01.png", ":/animations/talking/talking-02.png"],
+      "intervalMs": 220,
+      "loop": true
+    }
   }
 }
 

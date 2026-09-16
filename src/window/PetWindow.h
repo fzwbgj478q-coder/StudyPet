@@ -2,6 +2,7 @@
 
 #include <QPixmap>
 #include <QPoint>
+#include <QRect>
 #include <QWidget>
 
 class QAction;
@@ -14,10 +15,19 @@ class PetWindow final : public QWidget
     Q_OBJECT
 
 public:
+    enum class HorizontalBoundary { None, Left, Right };
+
     explicit PetWindow(QWidget *parent = nullptr);
+    void setPetFrame(const QPixmap &frame);
+    [[nodiscard]] HorizontalBoundary moveHorizontally(int pixels);
+    void showSpeechBubble(const QString &text, int durationMs = 2500);
 
 signals:
     void exitRequested();
+    void clicked();
+    void dragStarted();
+    void dragReleased();
+    void chatRequested();
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -31,11 +41,13 @@ protected:
 private:
     void createTrayMenu();
     void keepInsideCurrentScreen();
+    [[nodiscard]] QRect currentWorkArea() const;
     void setClickThrough(bool enabled);
 
-    QPixmap m_idlePixmap;
+    QPixmap m_currentPixmap;
     QPoint m_dragStartGlobal;
     QPoint m_windowStart;
+    bool m_pointerPressed = false;
     bool m_dragging = false;
     bool m_isQuitting = false;
     QSystemTrayIcon *m_trayIcon = nullptr;

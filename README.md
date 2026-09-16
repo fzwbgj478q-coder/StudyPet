@@ -4,7 +4,7 @@
 
 ## 当前进度
 
-阶段 1 已完成最小可运行桌宠：透明无边框窗口、始终置顶、原创 PNG 占位角色、鼠标拖动、多显示器工作区边界限制，以及显示/隐藏、点击穿透与退出的系统托盘菜单。
+阶段 2 已完成 PNG 序列帧播放器、独立状态机、随机行走与边界转向、点击/拖动反馈、占位聊天气泡，以及 Qt Test/CTest 与 Windows CI。阶段 1 的透明无边框窗口、置顶、托盘菜单和点击穿透继续保留。
 
 截图将放在 `docs/images/`（后续阶段补充）。
 
@@ -37,11 +37,28 @@ cmake --build build --config Release
 
 ```text
 src/core/       应用控制器与领域逻辑
+src/animation/  JSON 配置驱动的 PNG 序列帧播放器
 src/window/     Qt 窗口与桌面交互
 resources/      原创占位动画和动画配置
 docs/           软件工程文档（后续阶段持续补全）
-tests/          Qt Test/CTest 测试（第 2 阶段开始）
+tests/          Qt Test/CTest 单元测试
 ```
+
+## 动画配置
+
+`resources/config/animations.json` 的每个动作以 JSON 描述帧资源、`intervalMs` 与 `loop`。`AnimationPlayer` 只接受存在且可读取的帧；错误配置或缺失资源会记录警告并跳过，程序不会崩溃。当前动作包括 `Idle`、`WalkLeft`、`WalkRight`、`Sleep`、`Dragged`、`Clicked` 和 `Talking`。
+
+阶段 2 的全部 PNG 都是同一原创占位角色的帧占位副本；后续可替换为原创动作帧，而无需改动窗口或状态机逻辑。
+
+## 测试与 CI
+
+配置时保持 `BUILD_TESTING=ON`（默认值），然后执行：
+
+```powershell
+ctest --test-dir build -C Debug --output-on-failure
+```
+
+测试覆盖状态机的合法/非法转换、动画 JSON 解析，以及缺失 PNG 资源的安全失败。GitHub Actions 会在 Windows 上安装 Qt 6、配置工程、构建 Debug 并运行 CTest。
 
 ## 配置与 AI
 

@@ -1,6 +1,18 @@
 <RCC>
     <qresource prefix="/">
+        <file>config/animations.json</file>
         <file>animations/idle/idle-01.png</file>
+        <file>animations/idle/idle-02.png</file>
+        <file>animations/walk-left/walk-left-01.png</file>
+        <file>animations/walk-left/walk-left-02.png</file>
+        <file>animations/walk-right/walk-right-01.png</file>
+        <file>animations/walk-right/walk-right-02.png</file>
+        <file>animations/sleep/sleep-01.png</file>
+        <file>animations/dragged/dragged-01.png</file>
+        <file>animations/clicked/clicked-01.png</file>
+        <file>animations/clicked/clicked-02.png</file>
+        <file>animations/talking/talking-01.png</file>
+        <file>animations/talking/talking-02.png</file>
     </qresource>
 </RCC>
 

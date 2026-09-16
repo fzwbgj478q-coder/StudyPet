@@ -5,12 +5,14 @@
 #include <QCloseEvent>
 #include <QContextMenuEvent>
 #include <QGuiApplication>
+#include <QLabel>
 #include <QMenu>
 #include <QMouseEvent>
 #include <QPainter>
 #include <QScreen>
 #include <QStyle>
 #include <QSystemTrayIcon>
+#include <QTimer>
 
 namespace {
 constexpr QSize kPetSize{240, 240};
@@ -18,7 +20,7 @@ constexpr QSize kPetSize{240, 240};
 
 PetWindow::PetWindow(QWidget *parent)
     : QWidget(parent)
-    , m_idlePixmap(QStringLiteral(":/animations/idle/idle-01.png"))
+    , m_currentPixmap(QStringLiteral(":/animations/idle/idle-01.png"))
 {
     setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::Tool);
     setAttribute(Qt::WA_TranslucentBackground);
@@ -69,15 +71,55 @@ void PetWindow::paintEvent(QPaintEvent *event)
     Q_UNUSED(event)
     QPainter painter(this);
     painter.setRenderHint(QPainter::SmoothPixmapTransform);
-    if (!m_idlePixmap.isNull()) {
-        painter.drawPixmap(rect(), m_idlePixmap);
+    if (!m_currentPixmap.isNull()) {
+        painter.drawPixmap(rect(), m_currentPixmap);
     }
+}
+
+void PetWindow::setPetFrame(const QPixmap &frame)
+{
+    if (!frame.isNull()) {
+        m_currentPixmap = frame;
+        update();
+    }
+}
+
+PetWindow::HorizontalBoundary PetWindow::moveHorizontally(int pixels)
+{
+    const QRect area = currentWorkArea();
+    const int requestedX = pos().x() + pixels;
+    const int minX = area.left();
+    const int maxX = area.right() - width() + 1;
+    const int x = qBound(minX, requestedX, maxX);
+    move(x, pos().y());
+
+    if (requestedX < minX) {
+        return HorizontalBoundary::Left;
+    }
+    if (requestedX > maxX) {
+        return HorizontalBoundary::Right;
+    }
+    return HorizontalBoundary::None;
+}
+
+void PetWindow::showSpeechBubble(const QString &text, int durationMs)
+{
+    auto *bubble = new QLabel(text, this);
+    bubble->setWordWrap(true);
+    bubble->setAlignment(Qt::AlignCenter);
+    bubble->setGeometry(24, 8, width() - 48, 52);
+    bubble->setStyleSheet(QStringLiteral(
+        "QLabel { background: rgba(255, 255, 255, 230); color: #3b2b52; "
+        "border: 1px solid #8d73b2; border-radius: 12px; padding: 4px; }"));
+    bubble->show();
+    QTimer::singleShot(durationMs, bubble, &QObject::deleteLater);
 }
 
 void PetWindow::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
-        m_dragging = true;
+        m_pointerPressed = true;
+        m_dragging = false;
         m_dragStartGlobal = event->globalPosition().toPoint();
         m_windowStart = pos();
         event->accept();
@@ -88,7 +130,13 @@ void PetWindow::mousePressEvent(QMouseEvent *event)
 
 void PetWindow::mouseMoveEvent(QMouseEvent *event)
 {
-    if (m_dragging && (event->buttons() & Qt::LeftButton)) {
+    if (m_pointerPressed && (event->buttons() & Qt::LeftButton)) {
+        if (!m_dragging
+            && (event->globalPosition().toPoint() - m_dragStartGlobal).manhattanLength()
+                >= QApplication::startDragDistance()) {
+            m_dragging = true;
+            emit dragStarted();
+        }
         move(m_windowStart + event->globalPosition().toPoint() - m_dragStartGlobal);
         keepInsideCurrentScreen();
         event->accept();
@@ -99,9 +147,15 @@ void PetWindow::mouseMoveEvent(QMouseEvent *event)
 
 void PetWindow::mouseReleaseEvent(QMouseEvent *event)
 {
-    if (event->button() == Qt::LeftButton && m_dragging) {
-        m_dragging = false;
+    if (event->button() == Qt::LeftButton && m_pointerPressed) {
+        m_pointerPressed = false;
         keepInsideCurrentScreen();
+        if (m_dragging) {
+            m_dragging = false;
+            emit dragReleased();
+        } else {
+            emit clicked();
+        }
         event->accept();
         return;
     }
@@ -111,9 +165,7 @@ void PetWindow::mouseReleaseEvent(QMouseEvent *event)
 void PetWindow::mouseDoubleClickEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
-        m_trayIcon->showMessage(QStringLiteral("StudyPet"),
-                                QStringLiteral("聊天功能将在第 4 阶段开放。"),
-                                QSystemTrayIcon::Information, 2500);
+        emit chatRequested();
         event->accept();
         return;
     }
@@ -137,14 +189,19 @@ void PetWindow::closeEvent(QCloseEvent *event)
 
 void PetWindow::keepInsideCurrentScreen()
 {
+    const QRect area = currentWorkArea();
+    const int x = qBound(area.left(), pos().x(), area.right() - width() + 1);
+    const int y = qBound(area.top(), pos().y(), area.bottom() - height() + 1);
+    move(x, y);
+}
+
+QRect PetWindow::currentWorkArea() const
+{
     QScreen *screen = QGuiApplication::screenAt(frameGeometry().center());
     if (!screen) {
         screen = QGuiApplication::primaryScreen();
     }
-    const QRect area = screen->availableGeometry();
-    const int x = qBound(area.left(), pos().x(), area.right() - width() + 1);
-    const int y = qBound(area.top(), pos().y(), area.bottom() - height() + 1);
-    move(x, y);
+    return screen->availableGeometry();
 }
 
 void PetWindow::setClickThrough(bool enabled)
