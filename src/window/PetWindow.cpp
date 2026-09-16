@@ -43,6 +43,9 @@ void PetWindow::createTrayMenu()
     auto *showAction = m_trayMenu->addAction(QStringLiteral("显示桌宠"));
     auto *hideAction = m_trayMenu->addAction(QStringLiteral("隐藏桌宠"));
     m_trayMenu->addSeparator();
+    auto *studyAction = m_trayMenu->addAction(QStringLiteral("打开学习工具"));
+    auto *settingsAction = m_trayMenu->addAction(QStringLiteral("打开设置"));
+    auto *statsAction = m_trayMenu->addAction(QStringLiteral("查看桌宠状态"));
     m_clickThroughAction = m_trayMenu->addAction(QStringLiteral("鼠标点击穿透"));
     m_clickThroughAction->setCheckable(true);
     m_trayMenu->addSeparator();
@@ -50,6 +53,9 @@ void PetWindow::createTrayMenu()
 
     connect(showAction, &QAction::triggered, this, [this] { show(); raise(); activateWindow(); });
     connect(hideAction, &QAction::triggered, this, &QWidget::hide);
+    connect(studyAction, &QAction::triggered, this, &PetWindow::studyRequested);
+    connect(settingsAction, &QAction::triggered, this, &PetWindow::settingsRequested);
+    connect(statsAction, &QAction::triggered, this, &PetWindow::statsRequested);
     connect(m_clickThroughAction, &QAction::toggled, this, &PetWindow::setClickThrough);
     connect(exitAction, &QAction::triggered, this, [this] {
         m_isQuitting = true;

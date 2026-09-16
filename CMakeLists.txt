@@ -22,8 +22,19 @@ qt_add_executable(StudyPet
     src/core/PetController.h
     src/core/PetStateMachine.cpp
     src/core/PetStateMachine.h
+    src/core/AppSettings.h
+    src/core/PetStats.cpp
+    src/core/PetStats.h
+    src/service/ReminderService.cpp
+    src/service/ReminderService.h
+    src/service/StorageService.cpp
+    src/service/StorageService.h
+    src/service/StudyService.cpp
+    src/service/StudyService.h
     src/window/PetWindow.cpp
     src/window/PetWindow.h
+    src/window/SettingsWindow.cpp
+    src/window/SettingsWindow.h
     resources/resources.qrc
 )
 
@@ -46,10 +57,27 @@ if(BUILD_TESTING)
         src/animation/AnimationPlayer.h
         src/core/PetStateMachine.cpp
         src/core/PetStateMachine.h
+        src/core/AppSettings.h
+        src/core/PetStats.cpp
+        src/core/PetStats.h
+        src/service/StorageService.cpp
+        src/service/StorageService.h
+        src/service/StudyService.cpp
+        src/service/StudyService.h
         resources/resources.qrc
     )
     target_link_libraries(StudyPetTests PRIVATE Qt6::Test Qt6::Widgets)
     add_test(NAME StudyPetTests COMMAND StudyPetTests)
+
+    qt_add_executable(StudyPetStage3Tests
+        tests/TestStage3.cpp
+        src/core/PetStats.cpp
+        src/core/PetStats.h
+        src/service/StudyService.cpp
+        src/service/StudyService.h
+    )
+    target_link_libraries(StudyPetStage3Tests PRIVATE Qt6::Test Qt6::Core)
+    add_test(NAME StudyPetStage3Tests COMMAND StudyPetStage3Tests)
 endif()
 
 install(TARGETS StudyPet RUNTIME DESTINATION bin)

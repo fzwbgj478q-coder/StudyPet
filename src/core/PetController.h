@@ -8,6 +8,11 @@
 class AnimationPlayer;
 class PetWindow;
 class QTimer;
+class ReminderService;
+class SettingsWindow;
+class StorageService;
+class StudyService;
+struct UserData;
 
 /// Coordinates application-level lifecycle without putting it in the window class.
 class PetController final : public QObject
@@ -31,5 +36,10 @@ private:
     QTimer *m_idleTimer = nullptr;
     QTimer *m_movementTimer = nullptr;
     PetStateMachine m_stateMachine;
+    StorageService *m_storage = nullptr;
+    UserData *m_userData = nullptr;
+    StudyService *m_studyService = nullptr;
+    ReminderService *m_reminderService = nullptr;
+    SettingsWindow *m_settingsWindow = nullptr;
 };
 

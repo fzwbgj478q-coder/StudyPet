@@ -31,6 +31,11 @@
       "intervalMs": 160,
       "loop": false
     },
+    "Happy": {
+      "frames": [":/animations/clicked/clicked-01.png", ":/animations/clicked/clicked-02.png"],
+      "intervalMs": 160,
+      "loop": false
+    },
     "Talking": {
       "frames": [":/animations/talking/talking-01.png", ":/animations/talking/talking-02.png"],
       "intervalMs": 220,

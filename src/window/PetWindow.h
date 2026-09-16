@@ -28,6 +28,9 @@ signals:
     void dragStarted();
     void dragReleased();
     void chatRequested();
+    void settingsRequested();
+    void studyRequested();
+    void statsRequested();
 
 protected:
     void paintEvent(QPaintEvent *event) override;

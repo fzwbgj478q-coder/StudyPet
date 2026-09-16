@@ -4,7 +4,7 @@
 
 ## 当前进度
 
-阶段 2 已完成 PNG 序列帧播放器、独立状态机、随机行走与边界转向、点击/拖动反馈、占位聊天气泡，以及 Qt Test/CTest 与 Windows CI。阶段 1 的透明无边框窗口、置顶、托盘菜单和点击穿透继续保留。
+阶段 3 已加入设置窗口、JSON 本地保存、番茄钟、喝水/久坐提醒、学习统计与养成属性。阶段 1/2 的桌宠交互和动画继续保留。
 
 截图将放在 `docs/images/`（后续阶段补充）。
 
@@ -59,6 +59,10 @@ ctest --test-dir build -C Debug --output-on-failure
 ```
 
 测试覆盖状态机的合法/非法转换、动画 JSON 解析，以及缺失 PNG 资源的安全失败。GitHub Actions 会在 Windows 上安装 Qt 6、配置工程、构建 Debug 并运行 CTest。
+
+## 本地数据
+
+用户数据通过 `QStandardPaths::AppDataLocation/study-pet.json` 保存，不写入源码目录。文件使用 `schemaVersion: 1` 和 `QSaveFile` 原子写入，损坏、缺失或类型不正确时回退到安全默认值。
 
 ## 配置与 AI
 
