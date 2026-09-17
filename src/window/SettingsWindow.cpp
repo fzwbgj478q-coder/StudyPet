@@ -5,6 +5,7 @@
 #include <QDoubleSpinBox>
 #include <QFormLayout>
 #include <QGroupBox>
+#include <QLabel>
 #include <QLineEdit>
 #include <QSpinBox>
 #include <QVBoxLayout>
