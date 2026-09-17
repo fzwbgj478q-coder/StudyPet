@@ -43,6 +43,7 @@ qt_add_executable(StudyPet
 )
 
 target_link_libraries(StudyPet PRIVATE Qt6::Widgets)
+target_include_directories(StudyPet PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 target_compile_definitions(StudyPet PRIVATE STUDYPET_VERSION=\"${PROJECT_VERSION}\")
 
@@ -73,6 +74,7 @@ if(BUILD_TESTING)
         resources/resources.qrc
     )
     target_link_libraries(StudyPetTests PRIVATE Qt6::Test Qt6::Widgets)
+    target_include_directories(StudyPetTests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
     add_test(NAME StudyPetTests COMMAND StudyPetTests)
 
     qt_add_executable(StudyPetStage3Tests
@@ -85,6 +87,7 @@ if(BUILD_TESTING)
         src/service/StorageService.h
     )
     target_link_libraries(StudyPetStage3Tests PRIVATE Qt6::Test Qt6::Core)
+    target_include_directories(StudyPetStage3Tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
     add_test(NAME StudyPetStage3Tests COMMAND StudyPetStage3Tests)
 endif()
 
