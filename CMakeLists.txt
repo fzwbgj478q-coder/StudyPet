@@ -87,6 +87,8 @@ if(BUILD_TESTING)
         src/service/StudyService.h
         src/service/StorageService.cpp
         src/service/StorageService.h
+        src/system/AutoStartManager.cpp
+        src/system/AutoStartManager.h
     )
     target_link_libraries(StudyPetStage3Tests PRIVATE Qt6::Test Qt6::Core)
     target_include_directories(StudyPetStage3Tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
