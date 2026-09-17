@@ -9,8 +9,10 @@ class QTimer;
 
 struct AnimationDefinition {
     QStringList frames;
+    QStringList fallbackFrames;
     int intervalMs = 250;
     bool loop = true;
+    bool mirror = false;
 };
 
 /// Loads declarative PNG animations and advances frames through the Qt event loop.
@@ -53,4 +55,3 @@ private:
     bool m_running = false;
     double m_speedMultiplier = 1.0;
 };
-

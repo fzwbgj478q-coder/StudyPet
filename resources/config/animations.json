@@ -1,46 +1,60 @@
 {
-  "formatVersion": 1,
+  "formatVersion": 2,
   "actions": {
     "Idle": {
-      "frames": [":/animations/idle/idle-01.png", ":/animations/idle/idle-02.png"],
-      "intervalMs": 900,
+      "frames": [":/animations/kitty/idle/kitty-idle-01.png", ":/animations/kitty/idle/kitty-idle-02.png", ":/animations/kitty/idle/kitty-idle-03.png", ":/animations/kitty/idle/kitty-idle-04.png"],
+      "fallbackFrames": [":/animations/idle/idle-01.png", ":/animations/idle/idle-02.png"],
+      "intervalMs": 650,
       "loop": true
     },
     "WalkLeft": {
-      "frames": [":/animations/walk-left/walk-left-01.png", ":/animations/walk-left/walk-left-02.png"],
-      "intervalMs": 180,
-      "loop": true
+      "frames": [":/animations/kitty/walk/kitty-walk-01.png", ":/animations/kitty/walk/kitty-walk-02.png", ":/animations/kitty/walk/kitty-walk-03.png", ":/animations/kitty/walk/kitty-walk-04.png"],
+      "fallbackFrames": [":/animations/walk-left/walk-left-01.png", ":/animations/walk-left/walk-left-02.png"],
+      "intervalMs": 165,
+      "loop": true,
+      "mirror": true
     },
     "WalkRight": {
-      "frames": [":/animations/walk-right/walk-right-01.png", ":/animations/walk-right/walk-right-02.png"],
-      "intervalMs": 180,
+      "frames": [":/animations/kitty/walk/kitty-walk-01.png", ":/animations/kitty/walk/kitty-walk-02.png", ":/animations/kitty/walk/kitty-walk-03.png", ":/animations/kitty/walk/kitty-walk-04.png"],
+      "fallbackFrames": [":/animations/walk-right/walk-right-01.png", ":/animations/walk-right/walk-right-02.png"],
+      "intervalMs": 165,
       "loop": true
     },
     "Sleep": {
-      "frames": [":/animations/sleep/sleep-01.png"],
-      "intervalMs": 1200,
+      "frames": [":/animations/kitty/sleep/kitty-sleep-01.png", ":/animations/kitty/sleep/kitty-sleep-02.png", ":/animations/kitty/sleep/kitty-sleep-03.png", ":/animations/kitty/sleep/kitty-sleep-04.png"],
+      "fallbackFrames": [":/animations/sleep/sleep-01.png"],
+      "intervalMs": 1000,
       "loop": true
     },
     "Dragged": {
-      "frames": [":/animations/dragged/dragged-01.png"],
+      "frames": [":/animations/kitty/idle/kitty-idle-01.png", ":/animations/kitty/idle/kitty-idle-02.png"],
+      "fallbackFrames": [":/animations/dragged/dragged-01.png"],
       "intervalMs": 250,
       "loop": true
     },
     "Clicked": {
-      "frames": [":/animations/clicked/clicked-01.png", ":/animations/clicked/clicked-02.png"],
-      "intervalMs": 160,
+      "frames": [":/animations/kitty/happy/kitty-happy-01.png", ":/animations/kitty/happy/kitty-happy-02.png", ":/animations/kitty/happy/kitty-happy-03.png", ":/animations/kitty/happy/kitty-happy-04.png"],
+      "fallbackFrames": [":/animations/clicked/clicked-01.png", ":/animations/clicked/clicked-02.png"],
+      "intervalMs": 145,
       "loop": false
     },
     "Happy": {
-      "frames": [":/animations/clicked/clicked-01.png", ":/animations/clicked/clicked-02.png"],
-      "intervalMs": 160,
+      "frames": [":/animations/kitty/happy/kitty-happy-01.png", ":/animations/kitty/happy/kitty-happy-02.png", ":/animations/kitty/happy/kitty-happy-03.png", ":/animations/kitty/happy/kitty-happy-04.png"],
+      "fallbackFrames": [":/animations/clicked/clicked-01.png", ":/animations/clicked/clicked-02.png"],
+      "intervalMs": 145,
       "loop": false
     },
     "Talking": {
-      "frames": [":/animations/talking/talking-01.png", ":/animations/talking/talking-02.png"],
+      "frames": [":/animations/kitty/talking/kitty-talking-01.png", ":/animations/kitty/talking/kitty-talking-02.png", ":/animations/kitty/talking/kitty-talking-03.png", ":/animations/kitty/talking/kitty-talking-04.png"],
+      "fallbackFrames": [":/animations/talking/talking-01.png", ":/animations/talking/talking-02.png"],
       "intervalMs": 220,
       "loop": true
+    },
+    "Reminder": {
+      "frames": [":/animations/kitty/reminder/kitty-reminder-01.png", ":/animations/kitty/reminder/kitty-reminder-02.png", ":/animations/kitty/reminder/kitty-reminder-03.png", ":/animations/kitty/reminder/kitty-reminder-04.png"],
+      "fallbackFrames": [":/animations/talking/talking-01.png", ":/animations/talking/talking-02.png"],
+      "intervalMs": 220,
+      "loop": false
     }
   }
 }
-

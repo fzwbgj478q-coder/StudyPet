@@ -13,6 +13,29 @@
         <file>animations/clicked/clicked-02.png</file>
         <file>animations/talking/talking-01.png</file>
         <file>animations/talking/talking-02.png</file>
+        <file>animations/kitty/idle/kitty-idle-01.png</file>
+        <file>animations/kitty/idle/kitty-idle-02.png</file>
+        <file>animations/kitty/idle/kitty-idle-03.png</file>
+        <file>animations/kitty/idle/kitty-idle-04.png</file>
+        <file>animations/kitty/walk/kitty-walk-01.png</file>
+        <file>animations/kitty/walk/kitty-walk-02.png</file>
+        <file>animations/kitty/walk/kitty-walk-03.png</file>
+        <file>animations/kitty/walk/kitty-walk-04.png</file>
+        <file>animations/kitty/talking/kitty-talking-01.png</file>
+        <file>animations/kitty/talking/kitty-talking-02.png</file>
+        <file>animations/kitty/talking/kitty-talking-03.png</file>
+        <file>animations/kitty/talking/kitty-talking-04.png</file>
+        <file>animations/kitty/happy/kitty-happy-01.png</file>
+        <file>animations/kitty/happy/kitty-happy-02.png</file>
+        <file>animations/kitty/happy/kitty-happy-03.png</file>
+        <file>animations/kitty/happy/kitty-happy-04.png</file>
+        <file>animations/kitty/reminder/kitty-reminder-01.png</file>
+        <file>animations/kitty/reminder/kitty-reminder-02.png</file>
+        <file>animations/kitty/reminder/kitty-reminder-03.png</file>
+        <file>animations/kitty/reminder/kitty-reminder-04.png</file>
+        <file>animations/kitty/sleep/kitty-sleep-01.png</file>
+        <file>animations/kitty/sleep/kitty-sleep-02.png</file>
+        <file>animations/kitty/sleep/kitty-sleep-03.png</file>
+        <file>animations/kitty/sleep/kitty-sleep-04.png</file>
     </qresource>
 </RCC>
-

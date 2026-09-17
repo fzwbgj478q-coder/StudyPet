@@ -15,6 +15,7 @@ private slots:
     void illegalStateTransitionsAreRejected();
     void animationConfigLoadsFromResources();
     void missingAnimationResourceIsHandled();
+    void missingPrimaryAnimationUsesFallback();
 };
 
 void TestStage2::legalStateTransitions()
@@ -74,6 +75,20 @@ void TestStage2::missingAnimationResourceIsHandled()
     QVERIFY(!player.setAction(QStringLiteral("Broken")));
 }
 
+void TestStage2::missingPrimaryAnimationUsesFallback()
+{
+    QTemporaryDir temporaryDirectory;
+    QVERIFY(temporaryDirectory.isValid());
+    const QString configPath = temporaryDirectory.filePath(QStringLiteral("fallback-frame.json"));
+    QFile file(configPath);
+    QVERIFY(file.open(QIODevice::WriteOnly));
+    file.write(R"({"actions":{"Recover":{"frames":[":/not-found.png"],"fallbackFrames":[":/animations/idle/idle-01.png"],"intervalMs":100,"loop":true}}})");
+    file.close();
+
+    AnimationPlayer player;
+    QVERIFY(player.loadConfig(configPath));
+    QVERIFY(player.setAction(QStringLiteral("Recover")));
+}
+
 QTEST_MAIN(TestStage2)
 #include "TestStage2.moc"
-
