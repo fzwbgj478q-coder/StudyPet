@@ -91,7 +91,9 @@ void OpenAiCompatibleClient::consumeStreamData()
         const QByteArray data = line.mid(5).trimmed();
         if (data == "[DONE]") continue;
         const QJsonDocument document = QJsonDocument::fromJson(data);
-        const QJsonObject choice = document.object().value(QStringLiteral("choices")).toArray().value(0).toObject();
+        const QJsonArray choices = document.object().value(QStringLiteral("choices")).toArray();
+        if (choices.isEmpty()) continue;
+        const QJsonObject choice = choices.at(0).toObject();
         const QString chunk = choice.value(QStringLiteral("delta")).toObject().value(QStringLiteral("content")).toString();
         if (!chunk.isEmpty()) {
             m_responseText += chunk;
@@ -130,7 +132,8 @@ void OpenAiCompatibleClient::finishReply()
     }
     if (m_responseText.isEmpty()) {
         const QJsonDocument document = QJsonDocument::fromJson(body);
-        const QString full = document.object().value(QStringLiteral("choices")).toArray().value(0).toObject()
+        const QJsonArray choices = document.object().value(QStringLiteral("choices")).toArray();
+        const QString full = choices.isEmpty() ? QString() : choices.at(0).toObject()
                                  .value(QStringLiteral("message")).toObject().value(QStringLiteral("content")).toString();
         if (full.isEmpty()) {
             fail(QStringLiteral("AI 返回的数据格式无法识别。"));
