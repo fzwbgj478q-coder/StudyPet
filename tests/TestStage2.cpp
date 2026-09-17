@@ -92,3 +92,4 @@ void TestStage2::missingPrimaryAnimationUsesFallback()
 
 QTEST_MAIN(TestStage2)
 #include "TestStage2.moc"
+

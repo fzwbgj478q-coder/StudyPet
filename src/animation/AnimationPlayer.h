@@ -55,3 +55,4 @@ private:
     bool m_running = false;
     double m_speedMultiplier = 1.0;
 };
+

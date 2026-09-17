@@ -1,1 +1,224 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíÛŽ=N‹Z–‹­¦ëeŠw¬Ô¥¹±Õ‘”€‰¹¥µ…Ñ¥½¹A±…å•È¹ ˆ((¥¹±Õ‘”€ñE•‰Õœø(¥¹±Õ‘”€ñE¥±”ø(¥¹±Õ‘”€ñE)Í½¹ÉÉ…äø(¥¹±Õ‘”€ñE)Í½¹½Õµ•¹Ðø(¥¹±Õ‘”€ñE)Í½¹=‰©•Ðø(¥¹±Õ‘”€ñE%µ…•I•…‘•Èø(¥¹±Õ‘”€ñEQ¥µ•Èø(¥¹±Õ‘”€ñEQÉ…¹Í™½É´ø(¥¹±Õ‘”€ñEÑ±½‰…°ø()¹¥µ…Ñ¥½¹A±…å•Èèé¹¥µ…Ñ¥½¹A±…å•È¡E=‰©•Ð€©Á…É•¹Ð¤(€€€€èE=‰©•Ð¡Á…É•¹Ð¤(€€€€°µ}Ñ¥µ•È¡¹•ÜEQ¥µ•È¡Ñ¡¥Ì¤¤)ì(€€€½¹¹•Ð¡µ}Ñ¥µ•È°€™EQ¥µ•ÈèéÑ¥µ•½ÕÐ°Ñ¡¥Ì°€™¹¥µ…Ñ¥½¹A±…å•Èèé…‘Ù…¹•É…µ”¤ì)ô()‰½½°¹¥µ…Ñ¥½¹A±…å•Èèé±½…‘½¹™¥œ¡½¹ÍÐEMÑÉ¥¹œ€™½¹™¥A…Ñ ¤)ì(€€€E¥±”½¹™¥¥±”¡½¹™¥A…Ñ ¤ì(€€€¥˜€ …½¹™¥¥±”¹½Á•¸¡E%=•Ù¥”èéI•…‘=¹±ä¤¤ì(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰…¹¹½Ð½Á•¸…¹¥µ…Ñ¥½¸½¹™¥œèˆ€ðð½¹™¥A…Ñ ì(€€€€€€€É•ÑÕÉ¸™…±Í”ì(€€€ô((€€€E)Í½¹A…ÉÍ•ÉÉ½ÈÁ…ÉÍ•ÉÉ½Èì(€€€½¹ÍÐE)Í½¹½Õµ•¹Ð‘½Õµ•¹Ð€ôE)Í½¹½Õµ•¹Ðèé™É½µ)Í½¸¡½¹™¥¥±”¹É•…‘±° ¤°€™Á…ÉÍ•ÉÉ½È¤ì(€€€¥˜€¡Á…ÉÍ•ÉÉ½È¹•ÉÉ½È€„ôE)Í½¹A…ÉÍ•ÉÉ½Èèé9½ÉÉ½Èñð€…‘½Õµ•¹Ð¹¥Í=‰©•Ð ¤¤ì(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰%¹Ù…±¥…¹¥µ…Ñ¥½¸)M=8èˆ€ðð½¹™¥A…Ñ €ððÁ…ÉÍ•ÉÉ½È¹•ÉÉ½ÉMÑÉ¥¹œ ¤ì(€€€€€€€É•ÑÕÉ¸™…±Í”ì(€€€ô((€€€½¹ÍÐE)Í½¹=‰©•Ð…Ñ¥½¹Ì€ô‘½Õµ•¹Ð¹½‰©•Ð ¤¹Ù…±Õ”¡EMÑÉ¥¹1¥Ñ•É…° ‰…Ñ¥½¹Ìˆ¤¤¹Ñ½=‰©•Ð ¤ì(€€€¥˜€¡…Ñ¥½¹Ì¹¥ÍµÁÑä ¤¤ì(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰¹¥µ…Ñ¥½¸½¹™¥œ¡…Ì¹¼…Ñ¥½¹Ìèˆ€ðð½¹™¥A…Ñ ì(€€€€€€€É•ÑÕÉ¸™…±Í”ì(€€€ô((€€€E!…Í ñEMÑÉ¥¹œ°¹¥µ…Ñ¥½¹•™¥¹¥Ñ¥½¸øÁ…ÉÍ•‘¹¥µ…Ñ¥½¹Ìì(€€€™½È€¡…ÕÑ¼¥Ð€ô…Ñ¥½¹Ì¹‰•¥¸ ¤ì¥Ð€„ô…Ñ¥½¹Ì¹•¹ ¤ì€¬­¥Ð¤ì(€€€€€€€¥˜€ …¥Ð¹Ù…±Õ” ¤¹¥Í=‰©•Ð ¤¤ì(€€€€€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰%¹Ù…±¥…¹¥µ…Ñ¥½¸•¹ÑÉäèˆ€ðð¥Ð¹­•ä ¤ì(€€€€€€€€€€€½¹Ñ¥¹Õ”ì(€€€€€€€ô(€€€€€€€½¹ÍÐE)Í½¹=‰©•Ð½‰©•Ð€ô¥Ð¹Ù…±Õ” ¤¹Ñ½=‰©•Ð ¤ì(€€€€€€€½¹ÍÐ¥¹Ð¥¹Ñ•ÉÙ…±5Ì€ô½‰©•Ð¹Ù…±Õ”¡EMÑÉ¥¹1¥Ñ•É…° ‰¥¹Ñ•ÉÙ…±5Ìˆ¤¤¹Ñ½%¹Ð ´Ä¤ì(€€€€€€€½¹ÍÐE)Í½¹ÉÉ…ä©Í½¹É…µ•Ì€ô½‰©•Ð¹Ù…±Õ”¡EMÑÉ¥¹1¥Ñ•É…° ‰™É…µ•Ìˆ¤¤¹Ñ½ÉÉ…ä ¤ì(€€€€€€€¥˜€¡¥¹Ñ•ÉÙ…±5Ì€ð€ÄØñð¥¹Ñ•ÉÙ…±5Ì€ø€ØÀÀÀÀñð©Í½¹É…µ•Ì¹¥ÍµÁÑä ¤¤ì(€€€€€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰¹¥µ…Ñ¥½¸¡…Ì¥¹Ù…±¥¥¹Ñ•ÉÙ…°½È•µÁÑä™É…µ•Ìèˆ€ðð¥Ð¹­•ä ¤ì(€€€€€€€€€€€½¹Ñ¥¹Õ”ì(€€€€€€€ô((€€€€€€€¹¥µ…Ñ¥½¹•™¥¹¥Ñ¥½¸‘•™¥¹¥Ñ¥½¸ì(€€€€€€€‘•™¥¹¥Ñ¥½¸¹¥¹Ñ•ÉÙ…±5Ì€ô¥¹Ñ•ÉÙ…±5Ìì(€€€€€€€‘•™¥¹¥Ñ¥½¸¹±½½À€ô½‰©•Ð¹Ù…±Õ”¡EMÑÉ¥¹1¥Ñ•É…° ‰±½½Àˆ¤¤¹Ñ½	½½°¡ÑÉÕ”¤ì(€€€€€€€‘•™¥¹¥Ñ¥½¸¹µ¥ÉÉ½È€ô½‰©•Ð¹Ù…±Õ”¡EMÑÉ¥¹1¥Ñ•É…° ‰µ¥ÉÉ½Èˆ¤¤¹Ñ½	½½°¡™…±Í”¤ì(€€€€€€€½¹ÍÐ…ÕÑ¼½±±•ÑÉ…µ•Ì€ômÑ¡¥Ì°€™¥Ñt¡½¹ÍÐE)Í½¹ÉÉ…ä€™™É…µ•Ì°EMÑÉ¥¹1¥ÍÐ€©Ñ…É•Ð¤ì(€€€€€€€€€€€Ñ…É•Ð´ù±•…È ¤ì(€€€€€€€€€€€¥˜€¡™É…µ•Ì¹¥ÍµÁÑä ¤¤ì(€€€€€€€€€€€€€€€É•ÑÕÉ¸™…±Í”ì(€€€€€€€€€€€ô(€€€€€€€€€€€™½È€¡½¹ÍÐE)Í½¹Y…±Õ”€™Ù…±Õ”€è™É…µ•Ì¤ì(€€€€€€€€€€€€€€€½¹ÍÐEMÑÉ¥¹œ™É…µ•A…Ñ €ôÙ…±Õ”¹Ñ½MÑÉ¥¹œ ¤ì(€€€€€€€€€€€€€€€¥˜€¡™É…µ•A…Ñ ¹¥ÍµÁÑä ¤ñð€…™É…µ•á¥ÍÑÌ¡™É…µ•A…Ñ ¤¤ì(€€€€€€€€€€€€€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰¹¥µ…Ñ¥½¸™É…µ”¥ÌÕ¹…Ù…¥±…‰±”èˆ€ðð™É…µ•A…Ñ €ðð€‰™½Èˆ€ðð¥Ð¹­•ä ¤ì(€€€€€€€€€€€€€€€€€€€Ñ…É•Ð´ù±•…È ¤ì(€€€€€€€€€€€€€€€€€€€É•ÑÕÉ¸™…±Í”ì(€€€€€€€€€€€€€€€ô(€€€€€€€€€€€€€€€Ñ…É•Ð´ù…ÁÁ•¹¡™É…µ•A…Ñ ¤ì(€€€€€€€€€€€ô(€€€€€€€€€€€É•ÑÕÉ¸ÑÉÕ”ì(€€€€€€€ôì(€€€€€€€½¹ÍÐE)Í½¹ÉÉ…ä™…±±‰…­)Í½¹É…µ•Ì€ô½‰©•Ð¹Ù…±Õ”¡EMÑÉ¥¹1¥Ñ•É…° ‰™…±±‰…­É…µ•Ìˆ¤¤¹Ñ½ÉÉ…ä ¤ì(€€€€€€€½¹ÍÐ‰½½°¡…ÍAÉ¥µ…ÉåÉ…µ•Ì€ô½±±•ÑÉ…µ•Ì¡©Í½¹É…µ•Ì°€™‘•™¥¹¥Ñ¥½¸¹™É…µ•Ì¤ì(€€€ƒŽ=¶‰žËkºwµç}¸¡½¹ÍÐEMÑÉ¥¹œ€™…Ñ¥½¹9…µ”¤½¹ÍÐ)ì(€€€É•ÑÕÉ¸µ}…¹¥µ…Ñ¥½¹Ì¹½¹Ñ…¥¹Ì¡…Ñ¥½¹9…µ”¤ì)ô()EMÑÉ¥¹œ¹¥µ…Ñ¥½¹A±…å•ÈèéÕÉÉ•¹ÑÑ¥½¸ ¤½¹ÍÐ)ì(€€€É•ÑÕÉ¸µ}ÕÉÉ•¹ÑÑ¥½¸ì)ô()EMÑÉ¥¹1¥ÍÐ¹¥µ…Ñ¥½¹A±…å•Èèé…Ñ¥½¹9…µ•Ì ¤½¹ÍÐ)ì(€€€É•ÑÕÉ¸µ}…¹¥µ…Ñ¥½¹Ì¹­•åÌ ¤ì)ô()‰½½°¹¥µ…Ñ¥½¹A±…å•Èèé¥ÍIÕ¹¹¥¹œ ¤½¹ÍÐ)ì(€€€É•ÑÕÉ¸µ}ÉÕ¹¹¥¹œì)ô)Ù½¥¹¥µ…Ñ¥½¹A±…å•ÈèéÍ•ÑMÁ••‘5Õ±Ñ¥Á±¥•È¡‘½Õ‰±”µÕ±Ñ¥Á±¥•È¤ìµ}ÍÁ••‘5Õ±Ñ¥Á±¥•È€ôÅ	½Õ¹ À¸ÈÔ°µÕ±Ñ¥Á±¥•È°€Ð¸À¤ì¥˜€¡µ}ÉÕ¹¹¥¹œ€˜˜µ}…¹¥µ…Ñ¥½¹Ì¹½¹Ñ…¥¹Ì¡µ}ÕÉÉ•¹ÑÑ¥½¸¤¤µ}Ñ¥µ•È´ùÍÑ…ÉÐ¡ÅI½Õ¹¡µ}…¹¥µ…Ñ¥½¹Ì¹Ù…±Õ”¡µ}ÕÉÉ•¹ÑÑ¥½¸¤¹¥¹Ñ•ÉÙ…±5Ì€¼µ}ÍÁ••‘5Õ±Ñ¥Á±¥•È¤¤ìô()Ù½¥¹¥µ…Ñ¥½¹A±…å•ÈèéÍÑ…ÉÐ ¤)ì(€€€¥˜€¡µ}ÕÉÉ•¹ÑÑ¥½¸¹¥ÍµÁÑä ¤ñð€…µ}…¹¥µ…Ñ¥½¹Ì¹½¹Ñ…¥¹Ì¡µ}ÕÉÉ•¹ÑÑ¥½¸¤¤ì(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰…¹¹½ÐÍÑ…ÉÐ…¹¥µ…Ñ¥½¸Ý¥Ñ¡½ÕÐ„Í•±•Ñ•…Ñ¥½¸¸ˆì(€€€€€€€É•ÑÕÉ¸ì(€€€ô(€€€µ}ÉÕ¹¹¥¹œ€ôÑÉÕ”ì(€€€¥˜€ …•µ¥ÑÕÉÉ•¹ÑÉ…µ” ¤¤ì(€€€€€€€ÍÑ½À ¤ì(€€€€€€€É•ÑÕÉ¸ì(€€€ô(€€€µ}Ñ¥µ•È´ùÍÑ…ÉÐ¡ÅI½Õ¹¡µ}…¹¥µ…Ñ¥½¹Ì¹Ù…±Õ”¡µ}ÕÉÉ•¹ÑÑ¥½¸¤¹¥¹Ñ•ÉÙ…±5Ì€¼µ}ÍÁ••‘5Õ±Ñ¥Á±¥•È¤¤ì)ô()Ù½¥¹¥µ…Ñ¥½¹A±…å•ÈèéÁ…ÕÍ” ¤)ì(€€€µ}Ñ¥µ•È´ùÍÑ½À ¤ì(€€€µ}ÉÕ¹¹¥¹œ€ô™…±Í”ì)ô()Ù½¥¹¥µ…Ñ¥½¹A±…å•ÈèéÍÑ½À ¤)ì(€€€µ}Ñ¥µ•È´ùÍÑ½À ¤ì(€€€µ}ÉÕ¹¹¥¹œ€ô™…±Í”ì(€€€µ}ÕÉÉ•¹ÑÉ…µ”€ô€Àì)ô()Ù½¥¹¥µ…Ñ¥½¹A±…å•Èèé…‘Ù…¹•É…µ” ¤)ì(€€€½¹ÍÐ…ÕÑ¼¥Ñ•É…Ñ½È€ôµ}…¹¥µ…Ñ¥½¹Ì¹½¹ÍÑ¥¹¡µ}ÕÉÉ•¹ÑÑ¥½¸¤ì(€€€¥˜€¡¥Ñ•É…Ñ½È€ôôµ}…¹¥µ…Ñ¥½¹Ì¹•¹ ¤ñð¥Ñ•É…Ñ½È´ù™É…µ•Ì¹¥ÍµÁÑä ¤¤ì(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰…¹¹½Ð…‘Ù…¹”…¸Õ¹…Ù…¥±…‰±”…¹¥µ…Ñ¥½¸…Ñ¥½¸èˆ€ððµ}ÕÉÉ•¹ÑÑ¥½¸ì(€€€€€€€ÍÑ½À ¤ì(€€€€€€€É•ÑÕÉ¸ì(€€€ô((€€€€¬­µ}ÕÉÉ•¹ÑÉ…µ”ì(€€€¥˜€¡µ}ÕÉÉ•¹ÑÉ…µ”€øô¥Ñ•É…Ñ½È´ù™É…µ•Ì¹Í¥é” ¤¤ì(€€€€€€€¥˜€ …¥Ñ•É…Ñ½È´ù±½½À¤ì(€€€€€€€€€€€½¹ÍÐEMÑÉ¥¹œ™¥¹¥Í¡•‘Ñ¥½¸€ôµ}ÕÉÉ•¹ÑÑ¥½¸ì(€€€€€€€€€€€ÍÑ½À ¤ì(€€€€€€€€€€€•µ¥Ð…Ñ¥½¹¥¹¥Í¡•¡™¥¹¥Í¡•‘Ñ¥½¸¤ì(€€€€€€€€€€€É•ÑÕÉ¸ì(€€€€€€€ô(€€€€€€€µ}ÕÉÉ•¹ÑÉ…µ”€ô€Àì(€€€ô(€€€•µ¥ÑÕÉÉ•¹ÑÉ…µ” ¤ì)ô()‰½½°¹¥µ…Ñ¥½¹A±…å•Èèé•µ¥ÑÕÉÉ•¹ÑÉ…µ” ¤)ì(€€€…ÕÑ¼¥Ñ•É…Ñ½È€ôµ}…¹¥µ…Ñ¥½¹Ì¹™¥¹¡µ}ÕÉÉ•¹ÑÑ¥½¸¤ì(€€€¥˜€¡¥Ñ•É…Ñ½È€ôôµ}…¹¥µ…Ñ¥½¹Ì¹•¹ ¤ñðµ}ÕÉÉ•¹ÑÉ…µ”€ð€À(€€€€€€€ñðµ}ÕÉÉ•¹ÑÉ…µ”€øô¥Ñ•É…Ñ½È´ù™É…µ•Ì¹Í¥é” ¤¤ì(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰ÕÉÉ•¹Ð…¹¥µ…Ñ¥½¸™É…µ”¥Ì¥¹Ù…±¥™½È…Ñ¥½¸èˆ€ððµ}ÕÉÉ•¹ÑÑ¥½¸ì(€€€€€€€É•ÑÕÉ¸™…±Í”ì(€€€ô((€€€½¹ÍÐEA¥áµ…À™É…µ”¡¥Ñ•É…Ñ½È´ù™É…µ•Ì¹…Ð¡µ}ÕÉÉ•¹ÑÉ…µ”¤¤ì(€€€¥˜€¡™É…µ”¹¥Í9Õ±° ¤¤ì(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰U¹…‰±”Ñ¼‘•½‘”…¹¥µ…Ñ¥½¸™É…µ”èˆ€ðð¥Ñ•É…Ñ½È´ù™É…µ•Ì¹…Ð¡µ}ÕÉÉ•¹ÑÉ…µ”¤ì(€€€€€€€¥˜€¡¥Ñ•É…Ñ½È´ù™…±±‰…­É…µ•Ì¹¥ÍµÁÑä ¤¤ì(€€€€€€€€€€€É•ÑÕÉ¸™…±Í”ì(€€€€€€€ô(€€€€€€€Å]…É¹¥¹œ ¤€ðð€‰…±±¥¹œ‰…¬Ñ¼Á±…•¡½±‘•È…¹¥µ…Ñ¥½¸™½Èˆ€ððµ}ÕÉÉ•¹ÑÑ¥½¸ì(€€€€€€€¥Ñ•É…Ñ½È´ù™É…µ•Ì€ô¥Ñ•É…Ñ½È´ù™…±±‰…­É…µ•Ìì(€€€€€€€¥Ñ•É…Ñ½È´ù™…±±‰…­É…µ•Ì¹±•…È ¤ì(€€€€€€€µ}ÕÉÉ•¹ÑÉ…µ”€ô€Àì(€€€€€€€É•ÑÕÉ¸•µ¥ÑÕÉÉ•¹ÑÉ…µ” ¤ì(€€€ô(€€€•µ¥Ð™É…µ•¡…¹•¡¥Ñ•É…Ñ½È´ùµ¥ÉÉ½È(€€€€€€€€€€€€€€€€€€€€€€€€€€ü™É…µ”¹ÑÉ…¹Í™½Éµ•¡EQÉ…¹Í™½É´ ¤¹Í…±” ´Ä¸À°€Ä¸À¤°EÐèéMµ½½Ñ¡QÉ…¹Í™½Éµ…Ñ¥½¸¤(€€€€€€€€€€€€€€€€€€€€€€€€€€è™É…µ”¤ì(€€€É•ÑÕÉ¸ÑÉÕ”ì)ô()‰½½°¹¥µ…Ñ¥½¹A±…å•Èèé™É…µ•á¥ÍÑÌ¡½¹ÍÐEMÑÉ¥¹œ€™Á…Ñ ¤)ì(€€€E%µ…•I•…‘•ÈÉ•…‘•È¡Á…Ñ ¤ì(€€€É•ÑÕÉ¸E¥±”èé•á¥ÍÑÌ¡Á…Ñ ¤€˜˜É•…‘•È¹…¹I•… ¤ì)ô(
+#include "AnimationPlayer.h"
+
+#include <QDebug>
+#include <QFile>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QImageReader>
+#include <QTimer>
+#include <QTransform>
+#include <QtGlobal>
+
+AnimationPlayer::AnimationPlayer(QObject *parent)
+    : QObject(parent)
+    , m_timer(new QTimer(this))
+{
+    connect(m_timer, &QTimer::timeout, this, &AnimationPlayer::advanceFrame);
+}
+
+bool AnimationPlayer::loadConfig(const QString &configPath)
+{
+    QFile configFile(configPath);
+    if (!configFile.open(QIODevice::ReadOnly)) {
+        qWarning() << "Cannot open animation config:" << configPath;
+        return false;
+    }
+
+    QJsonParseError parseError;
+    const QJsonDocument document = QJsonDocument::fromJson(configFile.readAll(), &parseError);
+    if (parseError.error != QJsonParseError::NoError || !document.isObject()) {
+        qWarning() << "Invalid animation JSON:" << configPath << parseError.errorString();
+        return false;
+    }
+
+    const QJsonObject actions = document.object().value(QStringLiteral("actions")).toObject();
+    if (actions.isEmpty()) {
+        qWarning() << "Animation config has no actions:" << configPath;
+        return false;
+    }
+
+    QHash<QString, AnimationDefinition> parsedAnimations;
+    for (auto it = actions.begin(); it != actions.end(); ++it) {
+        if (!it.value().isObject()) {
+            qWarning() << "Invalid animation entry:" << it.key();
+            continue;
+        }
+        const QJsonObject object = it.value().toObject();
+        const int intervalMs = object.value(QStringLiteral("intervalMs")).toInt(-1);
+        const QJsonArray jsonFrames = object.value(QStringLiteral("frames")).toArray();
+        if (intervalMs < 16 || intervalMs > 60000 || jsonFrames.isEmpty()) {
+            qWarning() << "Animation has invalid interval or empty frames:" << it.key();
+            continue;
+        }
+
+        AnimationDefinition definition;
+        definition.intervalMs = intervalMs;
+        definition.loop = object.value(QStringLiteral("loop")).toBool(true);
+        definition.mirror = object.value(QStringLiteral("mirror")).toBool(false);
+        const auto collectFrames = [this, &it](const QJsonArray &frames, QStringList *target) {
+            target->clear();
+            if (frames.isEmpty()) {
+                return false;
+            }
+            for (const QJsonValue &value : frames) {
+                const QString framePath = value.toString();
+                if (framePath.isEmpty() || !frameExists(framePath)) {
+                    qWarning() << "Animation frame is unavailable:" << framePath << "for" << it.key();
+                    target->clear();
+                    return false;
+                }
+                target->append(framePath);
+            }
+            return true;
+        };
+        const QJsonArray fallbackJsonFrames = object.value(QStringLiteral("fallbackFrames")).toArray();
+        const bool hasPrimaryFrames = collectFrames(jsonFrames, &definition.frames);
+        const bool hasFallbackFrames = collectFrames(fallbackJsonFrames, &definition.fallbackFrames);
+        if (!hasPrimaryFrames && hasFallbackFrames) {
+            qWarning() << "Using fallback animation frames for" << it.key();
+            definition.frames = definition.fallbackFrames;
+            definition.fallbackFrames.clear();
+        }
+        if (hasPrimaryFrames || hasFallbackFrames) {
+            parsedAnimations.insert(it.key(), definition);
+        }
+    }
+
+    if (parsedAnimations.isEmpty()) {
+        qWarning() << "Animation config contains no usable actions:" << configPath;
+        return false;
+    }
+
+    stop();
+    m_animations = parsedAnimations;
+    m_currentAction.clear();
+    return true;
+}
+
+bool AnimationPlayer::setAction(const QString &actionName)
+{
+    const auto iterator = m_animations.constFind(actionName);
+    if (iterator == m_animations.cend()) {
+        qWarning() << "Unknown animation action:" << actionName;
+        return false;
+    }
+
+    const bool restart = m_running;
+    m_timer->stop();
+    m_currentAction = actionName;
+    m_currentFrame = 0;
+    m_running = restart;
+    emit actionChanged(m_currentAction);
+    if (!emitCurrentFrame()) {
+        return false;
+    }
+    if (m_running) {
+        m_timer->start(iterator->intervalMs);
+    }
+    return true;
+}
+
+bool AnimationPlayer::hasAction(const QString &actionName) const
+{
+    return m_animations.contains(actionName);
+}
+
+QString AnimationPlayer::currentAction() const
+{
+    return m_currentAction;
+}
+
+QStringList AnimationPlayer::actionNames() const
+{
+    return m_animations.keys();
+}
+
+bool AnimationPlayer::isRunning() const
+{
+    return m_running;
+}
+void AnimationPlayer::setSpeedMultiplier(double multiplier) { m_speedMultiplier = qBound(0.25, multiplier, 4.0); if (m_running && m_animations.contains(m_currentAction)) m_timer->start(qRound(m_animations.value(m_currentAction).intervalMs / m_speedMultiplier)); }
+
+void AnimationPlayer::start()
+{
+    if (m_currentAction.isEmpty() || !m_animations.contains(m_currentAction)) {
+        qWarning() << "Cannot start animation without a selected action.";
+        return;
+    }
+    m_running = true;
+    if (!emitCurrentFrame()) {
+        stop();
+        return;
+    }
+    m_timer->start(qRound(m_animations.value(m_currentAction).intervalMs / m_speedMultiplier));
+}
+
+void AnimationPlayer::pause()
+{
+    m_timer->stop();
+    m_running = false;
+}
+
+void AnimationPlayer::stop()
+{
+    m_timer->stop();
+    m_running = false;
+    m_currentFrame = 0;
+}
+
+void AnimationPlayer::advanceFrame()
+{
+    const auto iterator = m_animations.constFind(m_currentAction);
+    if (iterator == m_animations.cend() || iterator->frames.isEmpty()) {
+        qWarning() << "Cannot advance an unavailable animation action:" << m_currentAction;
+        stop();
+        return;
+    }
+
+    ++m_currentFrame;
+    if (m_currentFrame >= iterator->frames.size()) {
+        if (!iterator->loop) {
+            const QString finishedAction = m_currentAction;
+            stop();
+            emit actionFinished(finishedAction);
+            return;
+        }
+        m_currentFrame = 0;
+    }
+    emitCurrentFrame();
+}
+
+bool AnimationPlayer::emitCurrentFrame()
+{
+    auto iterator = m_animations.find(m_currentAction);
+    if (iterator == m_animations.end() || m_currentFrame < 0
+        || m_currentFrame >= iterator->frames.size()) {
+        qWarning() << "Current animation frame is invalid for action:" << m_currentAction;
+        return false;
+    }
+
+    const QPixmap frame(iterator->frames.at(m_currentFrame));
+    if (frame.isNull()) {
+        qWarning() << "Unable to decode animation frame:" << iterator->frames.at(m_currentFrame);
+        if (iterator->fallbackFrames.isEmpty()) {
+            return false;
+        }
+        qWarning() << "Falling back to placeholder animation for" << m_currentAction;
+        iterator->frames = iterator->fallbackFrames;
+        iterator->fallbackFrames.clear();
+        m_currentFrame = 0;
+        return emitCurrentFrame();
+    }
+    emit frameChanged(iterator->mirror
+                          ? frame.transformed(QTransform().scale(-1.0, 1.0), Qt::SmoothTransformation)
+                          : frame);
+    return true;
+}
+
+bool AnimationPlayer::frameExists(const QString &path)
+{
+    QImageReader reader(path);
+    return QFile::exists(path) && reader.canRead();
+}
+

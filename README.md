@@ -70,3 +70,4 @@ resources/      packaged PNG assets and animation configuration
 tests/          Qt Test / CTest coverage
 docs/           architecture, requirements and asset documentation
 ```
+
