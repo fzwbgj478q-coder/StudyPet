@@ -75,3 +75,13 @@ ctest --test-dir build -C Debug --output-on-failure
 3. 可关闭的 AI 聊天、流式输出与离线演示模式。
 4. Live2D 作为可选的第二阶段渲染器，不提交 SDK 或未经授权素材。
 
+## AI 对话（阶段 4）
+
+双击桌宠或从托盘选择 `AI Chat` 可打开独立聊天窗口。Enter 发送，Shift+Enter 换行，Stop 可安全取消正在生成的请求。
+
+聊天使用可选的 OpenAI-compatible `chat/completions` 接口。Base URL、模型、超时和上下文消息数在 Settings 的 Optional AI 区域保存；密钥绝不保存在普通设置或聊天记录中。密钥只从 `STUDYPET_API_KEY` 环境变量或被 Git 忽略的 `config/private.json` 读取。可从 `config/private.example.json` 复制本机模板，真实密钥不得提交。
+
+未配置密钥时，程序会明确显示 `Offline demo` 并自动使用本地 Mock 回复，因此没有网络或课程答辩现场没有账号时，聊天窗口仍能完整演示。详情见 `docs/phase-4-ai-chat.md`。
+
+阶段 4 的 CTest 覆盖 Mock 回退、取消、错误处理、聊天历史限制/清空和 Talking 状态回退；测试不会请求真实 AI 服务。
+

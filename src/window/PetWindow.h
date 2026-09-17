@@ -31,6 +31,7 @@ signals:
     void dragStarted();
     void dragReleased();
     void chatRequested();
+    void aiChatRequested();
     void settingsRequested();
     void studyRequested();
     void statsRequested();

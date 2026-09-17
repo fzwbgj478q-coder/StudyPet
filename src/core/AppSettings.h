@@ -1,5 +1,7 @@
 #pragma once
 
+#include <QString>
+
 struct AppSettings {
     double petScale = 1.0;
     double movementSpeed = 1.0;
@@ -16,6 +18,10 @@ struct AppSettings {
     int waterIntervalMinutes = 45;
     bool restReminder = true;
     int restIntervalMinutes = 60;
+    QString aiBaseUrl = QStringLiteral("https://api.openai.com/v1");
+    QString aiModel = QStringLiteral("gpt-4o-mini");
+    int aiTimeoutSeconds = 30;
+    int aiContextLimit = 20;
 
     void sanitize() {
         petScale = petScale < 0.5 || petScale > 2.0 ? 1.0 : petScale;
@@ -26,6 +32,10 @@ struct AppSettings {
         breakMinutes = breakMinutes < 1 || breakMinutes > 60 ? 5 : breakMinutes;
         waterIntervalMinutes = waterIntervalMinutes < 5 || waterIntervalMinutes > 360 ? 45 : waterIntervalMinutes;
         restIntervalMinutes = restIntervalMinutes < 10 || restIntervalMinutes > 360 ? 60 : restIntervalMinutes;
+        if (aiBaseUrl.trimmed().isEmpty()) aiBaseUrl = QStringLiteral("https://api.openai.com/v1");
+        if (aiModel.trimmed().isEmpty()) aiModel = QStringLiteral("gpt-4o-mini");
+        aiTimeoutSeconds = aiTimeoutSeconds < 5 || aiTimeoutSeconds > 180 ? 30 : aiTimeoutSeconds;
+        aiContextLimit = aiContextLimit < 2 || aiContextLimit > 100 ? 20 : aiContextLimit;
     }
 };
 

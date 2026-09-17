@@ -43,6 +43,7 @@ void PetWindow::createTrayMenu()
     auto *showAction = m_trayMenu->addAction(QStringLiteral("显示桌宠"));
     auto *hideAction = m_trayMenu->addAction(QStringLiteral("隐藏桌宠"));
     m_trayMenu->addSeparator();
+    auto *aiChatAction = m_trayMenu->addAction(QStringLiteral("AI Chat"));
     auto *studyAction = m_trayMenu->addAction(QStringLiteral("打开学习工具"));
     auto *settingsAction = m_trayMenu->addAction(QStringLiteral("打开设置"));
     auto *statsAction = m_trayMenu->addAction(QStringLiteral("查看桌宠状态"));
@@ -54,6 +55,7 @@ void PetWindow::createTrayMenu()
     connect(showAction, &QAction::triggered, this, [this] { show(); raise(); activateWindow(); });
     connect(hideAction, &QAction::triggered, this, &QWidget::hide);
     connect(studyAction, &QAction::triggered, this, &PetWindow::studyRequested);
+    connect(aiChatAction, &QAction::triggered, this, &PetWindow::aiChatRequested);
     connect(settingsAction, &QAction::triggered, this, &PetWindow::settingsRequested);
     connect(statsAction, &QAction::triggered, this, &PetWindow::statsRequested);
     connect(m_clickThroughAction, &QAction::toggled, this, &PetWindow::setClickThrough);

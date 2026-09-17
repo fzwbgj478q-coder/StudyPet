@@ -9,8 +9,10 @@ class AnimationPlayer;
 class PetWindow;
 class QTimer;
 class ReminderService;
+class AiService;
 class SettingsWindow;
 class StudyWindow;
+class ChatWindow;
 class StorageService;
 class StudyService;
 struct UserData;
@@ -41,7 +43,9 @@ private:
     UserData *m_userData = nullptr;
     StudyService *m_studyService = nullptr;
     ReminderService *m_reminderService = nullptr;
+    AiService *m_aiService = nullptr;
     SettingsWindow *m_settingsWindow = nullptr;
     StudyWindow *m_studyWindow = nullptr;
+    ChatWindow *m_chatWindow = nullptr;
 };
 

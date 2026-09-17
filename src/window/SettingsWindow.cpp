@@ -1,10 +1,42 @@
 #include "SettingsWindow.h"
+
 #include <QCheckBox>
 #include <QDialogButtonBox>
 #include <QDoubleSpinBox>
 #include <QFormLayout>
+#include <QGroupBox>
+#include <QLineEdit>
 #include <QSpinBox>
-SettingsWindow::SettingsWindow(QWidget*p):QDialog(p){setWindowTitle(QStringLiteral("StudyPet 设置"));auto*f=new QFormLayout(this);auto ds=[&](double a,double b,double v){auto*x=new QDoubleSpinBox(this);x->setRange(a,b);x->setSingleStep(.1);x->setValue(v);return x;};auto is=[&](int a,int b,int v){auto*x=new QSpinBox(this);x->setRange(a,b);x->setValue(v);return x;};m_scale=ds(.5,2,1);m_move=ds(.25,4,1);m_animation=ds(.25,4,1);m_volume=is(0,100,70);m_focus=is(1,180,25);m_break=is(1,60,5);m_waterInterval=is(5,360,45);m_restInterval=is(10,360,60);m_top=new QCheckBox(this);m_click=new QCheckBox(this);m_auto=new QCheckBox(this);m_bubble=new QCheckBox(this);m_startup=new QCheckBox(this);m_water=new QCheckBox(this);m_rest=new QCheckBox(this);m_top->setChecked(true);m_auto->setChecked(true);m_bubble->setChecked(true);m_water->setChecked(true);m_rest->setChecked(true);f->addRow("缩放",m_scale);f->addRow("移动速度",m_move);f->addRow("动画速度",m_animation);f->addRow("音量",m_volume);f->addRow("始终置顶",m_top);f->addRow("点击穿透",m_click);f->addRow("自动活动",m_auto);f->addRow("主动气泡",m_bubble);f->addRow("开机启动",m_startup);f->addRow("专注分钟",m_focus);f->addRow("休息分钟",m_break);f->addRow("喝水提醒",m_water);f->addRow("喝水间隔",m_waterInterval);f->addRow("久坐提醒",m_rest);f->addRow("久坐间隔",m_restInterval);auto*b=new QDialogButtonBox(QDialogButtonBox::Save|QDialogButtonBox::Cancel,this);f->addRow(b);connect(b,&QDialogButtonBox::accepted,this,[this]{auto s=collect();emit settingsApplied(s);accept();});connect(b,&QDialogButtonBox::rejected,this,&QDialog::reject);}
-void SettingsWindow::setSettings(const AppSettings&s){m_scale->setValue(s.petScale);m_move->setValue(s.movementSpeed);m_animation->setValue(s.animationSpeed);m_volume->setValue(s.volume);m_top->setChecked(s.alwaysOnTop);m_click->setChecked(s.clickThrough);m_auto->setChecked(s.autoActivity);m_bubble->setChecked(s.proactiveBubbles);m_startup->setChecked(s.autoStart);m_focus->setValue(s.focusMinutes);m_break->setValue(s.breakMinutes);m_water->setChecked(s.waterReminder);m_waterInterval->setValue(s.waterIntervalMinutes);m_rest->setChecked(s.restReminder);m_restInterval->setValue(s.restIntervalMinutes);}
-AppSettings SettingsWindow::collect()const{AppSettings s;s.petScale=m_scale->value();s.movementSpeed=m_move->value();s.animationSpeed=m_animation->value();s.volume=m_volume->value();s.alwaysOnTop=m_top->isChecked();s.clickThrough=m_click->isChecked();s.autoActivity=m_auto->isChecked();s.proactiveBubbles=m_bubble->isChecked();s.autoStart=m_startup->isChecked();s.focusMinutes=m_focus->value();s.breakMinutes=m_break->value();s.waterReminder=m_water->isChecked();s.waterIntervalMinutes=m_waterInterval->value();s.restReminder=m_rest->isChecked();s.restIntervalMinutes=m_restInterval->value();s.sanitize();return s;}
+#include <QVBoxLayout>
+
+SettingsWindow::SettingsWindow(QWidget *parent) : QDialog(parent)
+{
+    setWindowTitle(QStringLiteral("StudyPet Settings"));
+    auto *layout = new QVBoxLayout(this);
+    auto *form = new QFormLayout;
+    auto doubleSpin = [this](double minimum, double maximum, double value) { auto *box = new QDoubleSpinBox(this); box->setRange(minimum, maximum); box->setSingleStep(0.1); box->setValue(value); return box; };
+    auto spin = [this](int minimum, int maximum, int value) { auto *box = new QSpinBox(this); box->setRange(minimum, maximum); box->setValue(value); return box; };
+    m_scale=doubleSpin(.5,2,1);m_move=doubleSpin(.25,4,1);m_animation=doubleSpin(.25,4,1);m_volume=spin(0,100,70);m_focus=spin(1,180,25);m_break=spin(1,60,5);m_waterInterval=spin(5,360,45);m_restInterval=spin(10,360,60);
+    m_top=new QCheckBox(this);m_click=new QCheckBox(this);m_auto=new QCheckBox(this);m_bubble=new QCheckBox(this);m_startup=new QCheckBox(this);m_water=new QCheckBox(this);m_rest=new QCheckBox(this);
+    m_top->setChecked(true);m_auto->setChecked(true);m_bubble->setChecked(true);m_water->setChecked(true);m_rest->setChecked(true);
+    form->addRow(QStringLiteral("Pet scale"),m_scale);form->addRow(QStringLiteral("Movement speed"),m_move);form->addRow(QStringLiteral("Animation speed"),m_animation);form->addRow(QStringLiteral("Volume"),m_volume);form->addRow(QStringLiteral("Always on top"),m_top);form->addRow(QStringLiteral("Click through"),m_click);form->addRow(QStringLiteral("Auto activity"),m_auto);form->addRow(QStringLiteral("Proactive bubbles"),m_bubble);form->addRow(QStringLiteral("Start with Windows"),m_startup);form->addRow(QStringLiteral("Focus minutes"),m_focus);form->addRow(QStringLiteral("Break minutes"),m_break);form->addRow(QStringLiteral("Water reminder"),m_water);form->addRow(QStringLiteral("Water interval"),m_waterInterval);form->addRow(QStringLiteral("Rest reminder"),m_rest);form->addRow(QStringLiteral("Rest interval"),m_restInterval);
+    layout->addLayout(form);
+    auto *aiGroup = new QGroupBox(QStringLiteral("Optional AI (key is never stored here)"), this);
+    auto *aiForm = new QFormLayout(aiGroup);
+    m_aiBaseUrl=new QLineEdit(aiGroup);m_aiModel=new QLineEdit(aiGroup);m_aiTimeout=spin(5,180,30);m_aiContext=spin(2,100,20);
+    aiForm->addRow(QStringLiteral("Base URL"),m_aiBaseUrl);aiForm->addRow(QStringLiteral("Model"),m_aiModel);aiForm->addRow(QStringLiteral("Timeout (seconds)"),m_aiTimeout);aiForm->addRow(QStringLiteral("Context messages"),m_aiContext);
+    layout->addWidget(aiGroup);
+    auto *buttons=new QDialogButtonBox(QDialogButtonBox::Save|QDialogButtonBox::Cancel,this);layout->addWidget(buttons);
+    connect(buttons,&QDialogButtonBox::accepted,this,[this]{const auto settings=collect();emit settingsApplied(settings);accept();});connect(buttons,&QDialogButtonBox::rejected,this,&QDialog::reject);
+}
+
+void SettingsWindow::setSettings(const AppSettings &settings)
+{
+    m_scale->setValue(settings.petScale);m_move->setValue(settings.movementSpeed);m_animation->setValue(settings.animationSpeed);m_volume->setValue(settings.volume);m_top->setChecked(settings.alwaysOnTop);m_click->setChecked(settings.clickThrough);m_auto->setChecked(settings.autoActivity);m_bubble->setChecked(settings.proactiveBubbles);m_startup->setChecked(settings.autoStart);m_focus->setValue(settings.focusMinutes);m_break->setValue(settings.breakMinutes);m_water->setChecked(settings.waterReminder);m_waterInterval->setValue(settings.waterIntervalMinutes);m_rest->setChecked(settings.restReminder);m_restInterval->setValue(settings.restIntervalMinutes);m_aiBaseUrl->setText(settings.aiBaseUrl);m_aiModel->setText(settings.aiModel);m_aiTimeout->setValue(settings.aiTimeoutSeconds);m_aiContext->setValue(settings.aiContextLimit);
+}
+
+AppSettings SettingsWindow::collect() const
+{
+    AppSettings settings;settings.petScale=m_scale->value();settings.movementSpeed=m_move->value();settings.animationSpeed=m_animation->value();settings.volume=m_volume->value();settings.alwaysOnTop=m_top->isChecked();settings.clickThrough=m_click->isChecked();settings.autoActivity=m_auto->isChecked();settings.proactiveBubbles=m_bubble->isChecked();settings.autoStart=m_startup->isChecked();settings.focusMinutes=m_focus->value();settings.breakMinutes=m_break->value();settings.waterReminder=m_water->isChecked();settings.waterIntervalMinutes=m_waterInterval->value();settings.restReminder=m_rest->isChecked();settings.restIntervalMinutes=m_restInterval->value();settings.aiBaseUrl=m_aiBaseUrl->text().trimmed();settings.aiModel=m_aiModel->text().trimmed();settings.aiTimeoutSeconds=m_aiTimeout->value();settings.aiContextLimit=m_aiContext->value();settings.sanitize();return settings;
+}
 

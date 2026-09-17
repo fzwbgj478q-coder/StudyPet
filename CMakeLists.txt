@@ -10,7 +10,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 6.4 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 6.4 REQUIRED COMPONENTS Widgets Network)
 
 qt_standard_project_setup()
 
@@ -27,6 +27,14 @@ qt_add_executable(StudyPet
     src/core/PetStats.h
     src/service/ReminderService.cpp
     src/service/ReminderService.h
+    src/service/AiTypes.h
+    src/service/IAiClient.h
+    src/service/AiService.cpp
+    src/service/AiService.h
+    src/service/MockAiClient.cpp
+    src/service/MockAiClient.h
+    src/service/OpenAiCompatibleClient.cpp
+    src/service/OpenAiCompatibleClient.h
     src/service/StorageService.cpp
     src/service/StorageService.h
     src/service/StudyService.cpp
@@ -35,6 +43,8 @@ qt_add_executable(StudyPet
     src/system/AutoStartManager.h
     src/window/PetWindow.cpp
     src/window/PetWindow.h
+    src/window/ChatWindow.cpp
+    src/window/ChatWindow.h
     src/window/SettingsWindow.cpp
     src/window/SettingsWindow.h
     src/window/StudyWindow.cpp
@@ -42,7 +52,7 @@ qt_add_executable(StudyPet
     resources/resources.qrc
 )
 
-target_link_libraries(StudyPet PRIVATE Qt6::Widgets)
+target_link_libraries(StudyPet PRIVATE Qt6::Widgets Qt6::Network)
 target_include_directories(StudyPet PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 target_compile_definitions(StudyPet PRIVATE STUDYPET_VERSION=\"${PROJECT_VERSION}\")
@@ -93,6 +103,28 @@ if(BUILD_TESTING)
     target_link_libraries(StudyPetStage3Tests PRIVATE Qt6::Test Qt6::Core)
     target_include_directories(StudyPetStage3Tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
     add_test(NAME StudyPetStage3Tests COMMAND StudyPetStage3Tests)
+
+    qt_add_executable(StudyPetStage4Tests
+        tests/TestStage4.cpp
+        src/core/PetStateMachine.cpp
+        src/core/PetStateMachine.h
+        src/service/AiTypes.h
+        src/service/IAiClient.h
+        src/service/AiService.cpp
+        src/service/AiService.h
+        src/service/MockAiClient.cpp
+        src/service/MockAiClient.h
+        src/service/OpenAiCompatibleClient.cpp
+        src/service/OpenAiCompatibleClient.h
+        src/service/StorageService.cpp
+        src/service/StorageService.h
+        src/core/AppSettings.h
+        src/core/PetStats.cpp
+        src/core/PetStats.h
+    )
+    target_link_libraries(StudyPetStage4Tests PRIVATE Qt6::Test Qt6::Core Qt6::Network)
+    target_include_directories(StudyPetStage4Tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+    add_test(NAME StudyPetStage4Tests COMMAND StudyPetStage4Tests)
 endif()
 
 install(TARGETS StudyPet RUNTIME DESTINATION bin)
