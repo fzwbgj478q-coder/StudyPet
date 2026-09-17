@@ -69,6 +69,8 @@ if(BUILD_TESTING)
         src/service/StorageService.h
         src/system/AutoStartManager.cpp
         src/system/AutoStartManager.h
+        src/system/AutoStartManager.cpp
+        src/system/AutoStartManager.h
         src/service/StudyService.cpp
         src/service/StudyService.h
         resources/resources.qrc
