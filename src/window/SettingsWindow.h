@@ -2,5 +2,18 @@
 #include <QDialog>
 #include "core/AppSettings.h"
 class QDoubleSpinBox; class QSpinBox; class QCheckBox;
-class SettingsWindow final: public QDialog { Q_OBJECT public: explicit SettingsWindow(QWidget *parent=nullptr); void setSettings(const AppSettings&); signals: void settingsApplied(const AppSettings&); private: AppSettings collect() const; QDoubleSpinBox *m_scale,*m_move,*m_animation; QSpinBox *m_volume,*m_focus,*m_break,*m_waterInterval,*m_restInterval; QCheckBox *m_top,*m_click,*m_auto,*m_bubble,*m_startup,*m_water,*m_rest; };
+class SettingsWindow final : public QDialog
+{
+    Q_OBJECT
+public:
+    explicit SettingsWindow(QWidget *parent = nullptr);
+    void setSettings(const AppSettings &settings);
+signals:
+    void settingsApplied(const AppSettings &settings);
+private:
+    AppSettings collect() const;
+    QDoubleSpinBox *m_scale = nullptr, *m_move = nullptr, *m_animation = nullptr;
+    QSpinBox *m_volume = nullptr, *m_focus = nullptr, *m_break = nullptr, *m_waterInterval = nullptr, *m_restInterval = nullptr;
+    QCheckBox *m_top = nullptr, *m_click = nullptr, *m_auto = nullptr, *m_bubble = nullptr, *m_startup = nullptr, *m_water = nullptr, *m_rest = nullptr;
+};
 
