@@ -103,6 +103,14 @@ void PetController::start()
     m_studyService->setDurations(m_userData->settings.focusMinutes,m_userData->settings.breakMinutes);
     m_aiService->setConfiguration({m_userData->settings.aiBaseUrl,m_userData->settings.aiModel,m_userData->settings.aiTimeoutSeconds,m_userData->settings.aiContextLimit});
     m_aiService->setHistory(m_userData->chatHistory);
+    for (const ChatMessage &message : m_userData->chatHistory) {
+        if (message.role == ChatRole::User) {
+            m_chatWindow->appendUserMessage(message.content);
+        } else if (message.role == ChatRole::Assistant) {
+            m_chatWindow->beginAssistantMessage();
+            m_chatWindow->appendAssistantChunk(message.content);
+        }
+    }
     m_chatWindow->setMode(!m_aiService->isOnlineConfigured());
     m_reminderService->configure(m_userData->settings.waterReminder,m_userData->settings.waterIntervalMinutes,m_userData->settings.restReminder,m_userData->settings.restIntervalMinutes);
     if (!m_animationPlayer->loadConfig(QStringLiteral(":/config/animations.json"))) {
