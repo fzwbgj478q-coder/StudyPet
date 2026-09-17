@@ -23,11 +23,16 @@ SettingsWindow::SettingsWindow(QWidget *parent) : QDialog(parent)
     layout->addLayout(form);
     auto *aiGroup = new QGroupBox(QStringLiteral("Optional AI (key is never stored here)"), this);
     auto *aiForm = new QFormLayout(aiGroup);
-    m_aiBaseUrl=new QLineEdit(aiGroup);m_aiModel=new QLineEdit(aiGroup);m_aiTimeout=spin(5,180,30);m_aiContext=spin(2,100,20);
-    aiForm->addRow(QStringLiteral("Base URL"),m_aiBaseUrl);aiForm->addRow(QStringLiteral("Model"),m_aiModel);aiForm->addRow(QStringLiteral("Timeout (seconds)"),m_aiTimeout);aiForm->addRow(QStringLiteral("Context messages"),m_aiContext);
+    m_aiBaseUrl=new QLineEdit(aiGroup);m_aiModel=new QLineEdit(aiGroup);m_aiTimeout=spin(5,180,30);m_aiContext=spin(2,100,20);m_aiKeyStatus=new QLabel(aiGroup);
+    aiForm->addRow(QStringLiteral("Base URL"),m_aiBaseUrl);aiForm->addRow(QStringLiteral("Model"),m_aiModel);aiForm->addRow(QStringLiteral("Timeout (seconds)"),m_aiTimeout);aiForm->addRow(QStringLiteral("Context messages"),m_aiContext);aiForm->addRow(QStringLiteral("API key"),m_aiKeyStatus);
     layout->addWidget(aiGroup);
     auto *buttons=new QDialogButtonBox(QDialogButtonBox::Save|QDialogButtonBox::Cancel,this);layout->addWidget(buttons);
     connect(buttons,&QDialogButtonBox::accepted,this,[this]{const auto settings=collect();emit settingsApplied(settings);accept();});connect(buttons,&QDialogButtonBox::rejected,this,&QDialog::reject);
+}
+
+void SettingsWindow::setAiKeyConfigured(bool configured)
+{
+    m_aiKeyStatus->setText(configured ? QStringLiteral("Configured (hidden)") : QStringLiteral("Not configured: offline demo will be used"));
 }
 
 void SettingsWindow::setSettings(const AppSettings &settings)
